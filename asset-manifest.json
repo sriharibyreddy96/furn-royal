@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/furn-royal/static/css/main.9f411683.css",
-    "main.js": "/furn-royal/static/js/main.979c7304.js",
+    "main.js": "/furn-royal/static/js/main.a901dd5a.js",
     "static/media/12.jpg": "/furn-royal/static/media/12.dcee1ea361a7a88a42be.jpg",
     "static/media/4.jpg": "/furn-royal/static/media/4.2dd435ed52b71e04238e.jpg",
     "static/media/7.jpg": "/furn-royal/static/media/7.cbc68a1349e6dff82e88.jpg",
@@ -57,10 +57,10 @@
     "static/media/Five_Seating_Sofa_12.jpg": "/furn-royal/static/media/Five_Seating_Sofa_12.ce9f322c7f037ce622ba.jpg",
     "index.html": "/furn-royal/index.html",
     "main.9f411683.css.map": "/furn-royal/static/css/main.9f411683.css.map",
-    "main.979c7304.js.map": "/furn-royal/static/js/main.979c7304.js.map"
+    "main.a901dd5a.js.map": "/furn-royal/static/js/main.a901dd5a.js.map"
   },
   "entrypoints": [
     "static/css/main.9f411683.css",
-    "static/js/main.979c7304.js"
+    "static/js/main.a901dd5a.js"
   ]
 }
