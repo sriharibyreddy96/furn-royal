@@ -168,9 +168,9 @@ function Navbar() {
       <NavbarContainer>
         {/* Logo */}
         {/* <h1>RoyalFurn</h1> */}
-        <a href="/">
+        <Link to={"/"}>
           <img src={logo} alt="Logo" />
-        </a>
+        </Link>
         {/* Search Bar (Desktop) */}
         <SearchContainer>
           <input type="text" placeholder="Search" />

@@ -265,9 +265,9 @@ function Hero() {
         {/* Logo */}
         {/* <h1>RoyalFurn</h1> */}
         {/* <Link to='/'><img src={logo} alt='Logo' /></Link> */}
-        <a href="/">
+        <Link to={"/"}>
           <img src={logo} alt="Logo" />
-        </a>
+        </Link>
 
         {/* Search Bar (Desktop) */}
         <SearchContainer>
