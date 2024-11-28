@@ -156,7 +156,7 @@ function Navbar() {
       <NavbarContainer>
         {/* Logo */}
         {/* <h1>RoyalFurn</h1> */}
-        <a href='/'><img src={logo} alt='Logo' /></a>
+        <a href='/furn-royal'><img src={logo} alt='Logo' /></a>
         {/* Search Bar (Desktop) */}
         <SearchContainer>
           <input type="text" placeholder="Search" />

@@ -14,12 +14,12 @@ const App = () => {
   return (
     <BrowserRouter  basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/furn-royal" element={<Homepage />} />
         <Route path="/category/:category" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
         {/* <Route path="/products" element={<ProductPage />} /> */}
-        <Route path="/contact" element={<Contactpage />} />
-        <Route path="/product" element={<AllProducts />} />
+        <Route path="/furn-royal/contact" element={<Contactpage />} />
+        <Route path="/furn-royal/product" element={<AllProducts />} />
 
       </Routes>
     </BrowserRouter>
