@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/furn-royal/static/css/main.9f411683.css",
-    "main.js": "/furn-royal/static/js/main.3b8f9c1d.js",
+    "main.js": "/furn-royal/static/js/main.df28de9d.js",
     "static/media/12.jpg": "/furn-royal/static/media/12.dcee1ea361a7a88a42be.jpg",
     "static/media/4.jpg": "/furn-royal/static/media/4.2dd435ed52b71e04238e.jpg",
     "static/media/7.jpg": "/furn-royal/static/media/7.cbc68a1349e6dff82e88.jpg",
@@ -19,12 +19,10 @@
     "static/media/10.jpg": "/furn-royal/static/media/10.32c98cc0729075f286cb.jpg",
     "static/media/13.jpg": "/furn-royal/static/media/13.057330a8c73152addd8f.jpg",
     "static/media/17.jpg": "/furn-royal/static/media/17.01cdc8ca062a6700f1f9.jpg",
+    "static/media/bed1.jpg": "/furn-royal/static/media/bed1.01cdc8ca062a6700f1f9.jpg",
     "static/media/review-profile-1.jpeg": "/furn-royal/static/media/review-profile-1.f5b6781a317fdcf95dbb.jpeg",
-    "static/media/category_sofa.png": "/furn-royal/static/media/category_sofa.f7ca9c38ef1f054b14c7.png",
     "static/media/LOGO.jpg": "/furn-royal/static/media/LOGO.5bc5d2ad69be1646115e.jpg",
-    "static/media/category_bed.png": "/furn-royal/static/media/category_bed.9d26f4efbd896e204450.png",
     "static/media/hero_bed.svg": "/furn-royal/static/media/hero_bed.bf31c3eee28cd8189569bff6307f32a3.svg",
-    "static/media/category_table.png": "/furn-royal/static/media/category_table.68663abc3e29bcc3325e.png",
     "static/media/Big_Table_8.jpg": "/furn-royal/static/media/Big_Table_8.ac41453bb3790415082b.jpg",
     "static/media/Small_Table_2.jpg": "/furn-royal/static/media/Small_Table_2.a6c9292a6fdc3dc71e0b.jpg",
     "static/media/Big_Table_5.jpg": "/furn-royal/static/media/Big_Table_5.838e9d3a9b4d30c5c8d7.jpg",
@@ -59,10 +57,10 @@
     "static/media/Five_Seating_Sofa_12.jpg": "/furn-royal/static/media/Five_Seating_Sofa_12.ce9f322c7f037ce622ba.jpg",
     "index.html": "/furn-royal/index.html",
     "main.9f411683.css.map": "/furn-royal/static/css/main.9f411683.css.map",
-    "main.3b8f9c1d.js.map": "/furn-royal/static/js/main.3b8f9c1d.js.map"
+    "main.df28de9d.js.map": "/furn-royal/static/js/main.df28de9d.js.map"
   },
   "entrypoints": [
     "static/css/main.9f411683.css",
-    "static/js/main.3b8f9c1d.js"
+    "static/js/main.df28de9d.js"
   ]
 }
