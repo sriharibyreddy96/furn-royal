@@ -14,7 +14,7 @@ const App = () => {
   return (
     <BrowserRouter  basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route exact path="/furn-royal" element={<Homepage />} />
+        <Route exact path="/" element={<Homepage />} />
         <Route path="/category/:category" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
         {/* <Route path="/products" element={<ProductPage />} /> */}
