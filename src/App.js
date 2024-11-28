@@ -18,8 +18,8 @@ const App = () => {
         <Route path="/category/:category" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
         {/* <Route path="/products" element={<ProductPage />} /> */}
-        <Route path="/furn-royal/contact" element={<Contactpage />} />
-        <Route path="/furn-royal/product" element={<AllProducts />} />
+        <Route path="/contact" element={<Contactpage />} />
+        <Route path="/products" element={<AllProducts />} />
 
       </Routes>
     </BrowserRouter>

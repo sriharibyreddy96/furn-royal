@@ -1,8 +1,9 @@
 // export default Hero;
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { RiSearchLine, RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../../assets/LOGO.jpg';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { RiSearchLine, RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import logo from "../../../assets/LOGO.jpg";
+import { Link } from "react-router-dom"; // Import react-scroll Link
 
 // Unified Background for Navbar and Hero Section
 const Container = styled.section`
@@ -12,7 +13,7 @@ const Container = styled.section`
   color: white;
   // height: 70vh;
   // margin-bottom: 50px;
-  
+
   // @media (max-width: 768px) {
   //   margin-bottom: 100px;
   // }
@@ -33,7 +34,7 @@ const NavbarContainer = styled.nav`
   z-index: 1000;
   transition: background-color 0.3s ease;
 
-  img{
+  img {
     height: 50px;
     width: 150px;
   }
@@ -57,13 +58,24 @@ const LinksContainer = styled.div`
   align-items: center;
   gap: 2rem;
 
+    a {
+    color: white;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #f1f1f1;
+    }
+
   @media (max-width: 768px) {
     display: none;
   }
 `;
 
 // Link Styling
-const Link = styled.a`
+const Links = styled.a`
   color: white;
   font-size: 1rem;
   text-decoration: none;
@@ -124,7 +136,7 @@ const MobileMenuIcon = styled.div`
 
 // Mobile Menu Links
 const MobileLinks = styled.div`
-  display: ${props => (props.open ? 'flex' : 'none')};
+  display: ${(props) => (props.open ? "flex" : "none")};
   flex-direction: column;
   background-color: #001f3d;
   position: absolute;
@@ -132,6 +144,7 @@ const MobileLinks = styled.div`
   right: 0;
   padding: 1rem;
   width: 200px;
+
 
   a {
     color: white;
@@ -146,7 +159,6 @@ const MobileLinks = styled.div`
   }
 `;
 
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -156,7 +168,9 @@ function Navbar() {
       <NavbarContainer>
         {/* Logo */}
         {/* <h1>RoyalFurn</h1> */}
-        <a href='/furn-royal'><img src={logo} alt='Logo' /></a>
+        <a href="/">
+          <img src={logo} alt="Logo" />
+        </a>
         {/* Search Bar (Desktop) */}
         <SearchContainer>
           <input type="text" placeholder="Search" />
@@ -165,9 +179,9 @@ function Navbar() {
 
         {/* Desktop Links */}
         <LinksContainer>
-          <Link href="/furn-royal">Home</Link>
-          <Link href="/furn-royal/product">Products</Link>
-          <Link href="/furn-royal/contact">Contact Us</Link>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/products"}>Products</Link>
+          <Link to={"/contact"}>Contact Us</Link>
         </LinksContainer>
 
         {/* Mobile Menu Icon */}
@@ -177,9 +191,9 @@ function Navbar() {
 
         {/* Mobile Links */}
         <MobileLinks open={menuOpen}>
-          <Link href="/furn-royal">Home</Link>
-          <Link href="/furn-royal/product">Products</Link>
-          <Link href="/furn-royal/contact">Contact Us</Link>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/products"}>Products</Link>
+          <Link to={"/contact"}>Contact Us</Link>
           {/* <SearchContainer>
             <input type="text" placeholder="Search" />
             <RiSearchLine size={20} />
