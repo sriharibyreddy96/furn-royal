@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 import Contactpage from "./pages/Contactpage";
+import AllProducts from "./pages/AllProducts";
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/product/:id" element={<ProductPage />} />
         {/* <Route path="/products" element={<ProductPage />} /> */}
         <Route path="/contact" element={<Contactpage />} />
+        <Route path="/products" element={<AllProducts />} />
 
       </Routes>
     </BrowserRouter>

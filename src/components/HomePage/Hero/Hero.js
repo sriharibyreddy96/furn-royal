@@ -204,7 +204,7 @@ const TextSection = styled.div`
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
     font-size: 18px;
     font-weight: bold;
     z-index: 1; // Ensure it stays on top

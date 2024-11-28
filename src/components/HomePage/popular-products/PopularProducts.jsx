@@ -8,8 +8,15 @@ const ProductGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
-  padding: 20px;
-  margin: 50px;
+  padding: 50px 100px;
+  // margin: 50px;
+  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8) ;
+  background-color: #e8e8e8;
+
+  @media (max-width: 600px) {
+  padding: 50px;
+  }
+
 `;
 
 const Heading = styled.h1`

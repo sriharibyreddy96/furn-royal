@@ -11,7 +11,7 @@ const Container = styled.section`
   background-color: #363636; /* Navy Blue */
   color: white;
   // height: 70vh;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   
   // @media (max-width: 768px) {
   //   margin-bottom: 100px;
@@ -166,7 +166,7 @@ function Navbar() {
         {/* Desktop Links */}
         <LinksContainer>
           <Link href="/">Home</Link>
-          <Link href="products">Products</Link>
+          <Link href="/products">Products</Link>
           <Link href="/contact">Contact Us</Link>
         </LinksContainer>
 

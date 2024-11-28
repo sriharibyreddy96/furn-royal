@@ -124,7 +124,7 @@ const Modal = ({ product, onClose }) => {
           {product.subcategory && <p>{product.subcategory}</p>}
           
           {/* Contact Us Button */}
-          <button className="contact-btn" onClick={() => navigate('/')}>Contact Us</button>
+          <button className="contact-btn" onClick={() => navigate('/contact')}>Contact Us</button>
         </ProductDetails>
       </ModalContent>
     </ModalWrapper>

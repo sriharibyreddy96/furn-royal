@@ -6,7 +6,7 @@ const Card = styled.div`
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
-  background-color: white;
+  background-color: #ECFFDC;
   cursor: pointer;
 
   img {

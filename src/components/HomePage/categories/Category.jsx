@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import SofaImage from "../../../assets/category_sofa.png";
-import ChairsImage from "../../../assets/category_table.png";
-import BedImage from "../../../assets/category_bed.png";
+import SofaImage from "../../../assets/Royal_Furn_Sofas/Single_Sofa_3.jpg";
+import ChairsImage from "../../../assets/Royal_Furn_Tables/Small_Table_4.jpg";
+import BedImage from "../../../assets/category_imgs/bed1.jpg";
 
 const CategoryContainer = styled.div`
   display: flex;

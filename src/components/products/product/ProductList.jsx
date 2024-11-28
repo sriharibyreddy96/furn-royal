@@ -5,26 +5,29 @@ import products from "../../../data/Products";
 import Modal from "./Modal";
 import offerlogo from "../../../assets/LOGO.jpg"; // General logo
 import bedimg1 from "../../../assets/Royal_Furn_Beds/1.jpg";
-import bedimg2 from "../../../assets/Royal_Furn_Beds/2.jpg";
-import bedimg3 from "../../../assets/Royal_Furn_Beds/3.jpg";
+// import bedimg2 from "../../../assets/Royal_Furn_Beds/2.jpg";
+// import bedimg3 from "../../../assets/Royal_Furn_Beds/3.jpg";
 import sofaimg1 from "../../../assets/Royal_Furn_Sofas/Five_Seating_Sofa_.jpg";
-import sofaimg2 from "../../../assets/Royal_Furn_Sofas/Single_Sofa_2.jpg";
-import sofaimg3 from "../../../assets/Royal_Furn_Sofas/Sofa_bed_1.jpg";
+// import sofaimg2 from "../../../assets/Royal_Furn_Sofas/Single_Sofa_2.jpg";
+// import sofaimg3 from "../../../assets/Royal_Furn_Sofas/Sofa_bed_1.jpg";
 import chairimg1 from "../../../assets/Royal_Furn_Tables/Big_Table_1.jpg";
-import chairimg2 from "../../../assets/Royal_Furn_Tables/Big_Table_1.jpg";
-import chairimg3 from "../../../assets/Royal_Furn_Tables/Small_Table_4.jpg";
+// import chairimg2 from "../../../assets/Royal_Furn_Tables/Big_Table_1.jpg";
+// import chairimg3 from "../../../assets/Royal_Furn_Tables/Small_Table_4.jpg";
 // import chairimg4 from "../../../assets/Royal_Furn_Tables/Small_Table_3.jpg";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // Styled Components for Offers Section
 const OffersSection = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #909595;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
   padding: 20px;
   margin-top: 30px;
   // border-radius: 8px;
+  border: 1px solid black;
   width: 100%;
   flex-wrap: wrap;
 
@@ -64,7 +67,7 @@ const OffersSection = styled.div`
     gap: 20px;
 
     .discount {
-      color: white;
+      color: black;
       font-size: 40px;
       font-weight: bold;
     }
@@ -176,60 +179,60 @@ const Breadcrumb = styled.div`
   }
 `;
 
-const SubcategoryFilter = styled.div`
-  margin-bottom: 20px;
-  margin-left: 150px;
+// const SubcategoryFilter = styled.div`
+//   margin-bottom: 20px;
+//   margin-left: 150px;
 
-  button {
-    margin-right: 10px;
-    padding: 8px 16px;
-    font-size: 14px;
-    background-color: #e5e4e2;
-    color: black;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+//   button {
+//     margin-right: 10px;
+//     padding: 8px 16px;
+//     font-size: 14px;
+//     background-color: #e5e4e2;
+//     color: black;
+//     border: none;
+//     cursor: pointer;
+//     margin-top: 20px;
+//     border-radius: 5px;
+//     transition: background-color 0.3s ease, border-color 0.3s ease;
 
-    &:hover {
-      background-color: #a9a9a9;
-    }
+//     &:hover {
+//       background-color: #a9a9a9;
+//     }
 
-    &.selected {
-      background-color: #a9a9a9;
-      color: white;
-      border: 2px solid green;
-    }
+//     &.selected {
+//       background-color: #a9a9a9;
+//       color: white;
+//       border: 2px solid green;
+//     }
 
-    p {
-      font-size: 20px;
-      font-weight: bold;
-    }
+//     p {
+//       font-size: 20px;
+//       font-weight: bold;
+//     }
 
-    img {
-      height: 50px;
-      width: auto;
-    }
-  }
+//     img {
+//       height: 50px;
+//       width: auto;
+//     }
+//   }
 
-  @media (max-width: 768px) {
-    margin-left: 100px;
-  }
+//   @media (max-width: 768px) {
+//     margin-left: 100px;
+//   }
 
-  @media (max-width: 500px) {
-    margin-left: 20px;
-     button{
-      img {
-      height: 30px;
-      width: auto;
-    }
-    p {
-      font-size: 15px;
-    }
-     }
-  }
-`;
+//   @media (max-width: 500px) {
+//     margin-left: 20px;
+//      button{
+//       img {
+//       height: 30px;
+//       width: auto;
+//     }
+//     p {
+//       font-size: 15px;
+//     }
+//      }
+//   }
+// `;
 
 const ProductList = ({ category }) => {
   const location = useLocation();
@@ -246,11 +249,12 @@ const ProductList = ({ category }) => {
       product.category === category &&
       (selectedSubcategory === "All" ||
         product.subcategory === selectedSubcategory)
+        
   );
 
-  const handleSubcategoryChange = (subcategory) => {
-    setSelectedSubcategory(subcategory);
-  };
+  // const handleSubcategoryChange = (subcategory) => {
+  //   setSelectedSubcategory(subcategory);
+  // };
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
@@ -315,12 +319,13 @@ const ProductList = ({ category }) => {
   return (
     <>
       <Breadcrumb>
-        <span>Home → </span>
+        {/* <span>Home → </span> */}
+        <Link to={"/"}>Home → </Link>
         <span>{category.charAt(0).toUpperCase() + category.slice(1)}</span>
       </Breadcrumb>
 
       {/* Subcategory filter buttons */}
-      <SubcategoryFilter>
+      {/* <SubcategoryFilter>
         {category === "bed" && (
           <>
             <button
@@ -403,7 +408,7 @@ const ProductList = ({ category }) => {
             </button>
           </>
         )}
-      </SubcategoryFilter>
+      </SubcategoryFilter> */}
 
       <ProductContainer>{renderProductsWithOffer()}</ProductContainer>
 
