@@ -165,9 +165,9 @@ function Navbar() {
 
         {/* Desktop Links */}
         <LinksContainer>
-          <Link href="/">Home</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/furn-royal">Home</Link>
+          <Link href="/furn-royal/product">Products</Link>
+          <Link href="/furn-royal/contact">Contact Us</Link>
         </LinksContainer>
 
         {/* Mobile Menu Icon */}
@@ -177,9 +177,9 @@ function Navbar() {
 
         {/* Mobile Links */}
         <MobileLinks open={menuOpen}>
-          <Link href="/">Home</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/furn-royal">Home</Link>
+          <Link href="/furn-royal/product">Products</Link>
+          <Link href="/furn-royal/contact">Contact Us</Link>
           {/* <SearchContainer>
             <input type="text" placeholder="Search" />
             <RiSearchLine size={20} />

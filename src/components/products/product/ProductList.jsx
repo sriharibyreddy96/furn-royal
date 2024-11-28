@@ -159,6 +159,7 @@ const Breadcrumb = styled.div`
   font-size: 18px;
   margin-left: 150px;
   font-weight: bold;
+  margin-top: 20px;
 
   span {
     color: #555;

@@ -265,7 +265,7 @@ function Hero() {
         {/* Logo */}
         {/* <h1>RoyalFurn</h1> */}
         {/* <Link to='/'><img src={logo} alt='Logo' /></Link> */}
-        <a href="/">
+        <a href="/furn-royal">
           <img src={logo} alt="Logo" />
         </a>
 
@@ -277,7 +277,7 @@ function Hero() {
 
         {/* Desktop Links */}
         <LinksContainer>
-          <LinkStyled to="/" smooth={true} duration={500}>
+          <LinkStyled to="/furn-royal" smooth={true} duration={500}>
             Home
           </LinkStyled>
           <LinkStyled to="products" smooth={true} duration={500}>
@@ -295,7 +295,7 @@ function Hero() {
 
         {/* Mobile Links */}
         <MobileLinks open={menuOpen}>
-          <LinkStyled to="/" smooth={true} duration={500}>
+          <LinkStyled to="/furn-royal" smooth={true} duration={500}>
             Home
           </LinkStyled>
           <LinkStyled to="products" smooth={true} duration={500}>
