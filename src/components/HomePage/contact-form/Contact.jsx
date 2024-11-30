@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
-import ContactIng from '../../../assets/contact_form.jpeg';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import ContactIng from "../../../assets/contact_form.jpeg";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    mobile: "",
+    product: "", // For the dropdown
     message: "",
   });
 
@@ -21,45 +23,87 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if required fields are filled
+    if (!formData.name || !formData.mobile || !formData.message) {
+      toast.error("Please fill all required fields.");
+      return;
+    }
+
+    // Handle email optional condition
+    if (formData.email && !validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
     setIsSubmitting(true);
-  
+
     // Send email to admin (admin_notification_template)
     emailjs
       .send(
         "service_mp0e1192", // Your EmailJS service ID
-        "template_p77cp8b",  // Admin notification template
-        formData,            // Form data to be sent (name, email, message)
-        "yozpNwsbycgL75hCS"  // Your EmailJS user ID
+        "template_p77cp8b", // Admin notification template
+        formData, // Form data to be sent (name, email, message, etc.)
+        "yozpNwsbycgL75hCS" // Your EmailJS user ID
       )
       .then(
         () => {
-          // Send email to user (user_notification_template)
-          // Using the form data, the user's email will be dynamically included here
-          emailjs
-            .send(
-              "service_mp0e1192", // Your EmailJS service ID
-              "template_ai8fo9j", // User confirmation template
-              {
-                ...formData, // Send the form data to the user email template
-                to_email: formData.email, // Make sure you send the email to the user's email address
-              },
-              "yozpNwsbycgL75hCS" // Your EmailJS user ID
-            )
-            .then(() => {
-              setIsSubmitting(false);
-              toast.success("Thank you for contacting us! We will get back to you soon.");
-              setFormData({ name: "", email: "", message: "" });
-            })
-            .catch((error) => {
-              setIsSubmitting(false);
-              toast.error("There was an error sending the email to the user.");
+          // Send email to user (user_notification_template) if email is provided
+          if (formData.email) {
+            emailjs
+              .send(
+                "service_mp0e1192", // Your EmailJS service ID
+                "template_ai8fo9j", // User confirmation template
+                {
+                  ...formData, // Send the form data to the user email template
+                  to_email: formData.email, // Make sure you send the email to the user's email address
+                },
+                "yozpNwsbycgL75hCS" // Your EmailJS user ID
+              )
+              .then(() => {
+                setIsSubmitting(false);
+                toast.success(
+                  "Thank you for contacting us! We will get back to you soon."
+                );
+                setFormData({
+                  name: "",
+                  email: "",
+                  mobile: "",
+                  product: "",
+                  message: "",
+                });
+              })
+              .catch((error) => {
+                setIsSubmitting(false);
+                toast.error(
+                  "There was an error sending the email to the user."
+                );
+              });
+          } else {
+            setIsSubmitting(false);
+            toast.success(
+              "Thank you for contacting us! We will get back to you soon."
+            );
+            setFormData({
+              name: "",
+              email: "",
+              mobile: "",
+              product: "",
+              message: "",
             });
+          }
         },
         (error) => {
           setIsSubmitting(false);
           toast.error("There was an error sending the email to the admin.");
         }
       );
+  };
+
+  // Simple email validation function
+  const validateEmail = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
   };
 
   return (
@@ -87,11 +131,30 @@ const Contact = () => {
             <Input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Your Email (optional)"
               value={formData.email}
+              onChange={handleInputChange}
+            />
+            <Input
+              type="number"
+              name="mobile"
+              placeholder="Your Mobile Number"
+              value={formData.mobile}
               onChange={handleInputChange}
               required
             />
+            <Select
+              name="product"
+              value={formData.product}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="">Select Which Product You Want</option>
+              <option value="Sofa">Sofa</option>
+              <option value="Dining tables">Dining tables</option>
+              <option value="Beds">Beds</option>
+              <option value="All">All</option>
+            </Select>
             <TextArea
               name="message"
               placeholder="Your Message"
@@ -104,7 +167,6 @@ const Contact = () => {
               {isSubmitting ? "Sending..." : "Send"}
             </SubmitButton>
           </Form>
-
         </FormWrapper>
       </Container>
     </Section>
@@ -169,6 +231,11 @@ const FormWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
 
+  h3 {
+    margin-top: 10px;
+    color: grey;
+  }
+
   @media screen and (max-width: 500px) {
     padding: 10px;
   }
@@ -179,10 +246,44 @@ const Form = styled.form`
   margin-top: 20px;
 `;
 
+// const Input = styled.input`
+//   width: 100%;
+//   padding: 10px;
+//   margin-bottom: 10px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   font-size: 16px;
+//   background-color: #ffffff;
+// `;
+
+
 const Input = styled.input`
   width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+
+  /* Hide the spinner (increase/decrease) buttons in WebKit browsers (Chrome, Safari, Edge) */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;  /* Removes the spinner buttons */
+    margin: 0;                 /* Optional: remove margin */
+  }
+
+  /* Hide the spinner buttons in Firefox */
+  & {
+    -moz-appearance: textfield; /* Removes spinner buttons in Firefox */
+    appearance: none;           /* Removes spinner buttons in modern browsers */
+  }
+`;
+
+const Select = styled.select`
+  width: 100%;
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;

@@ -50,7 +50,7 @@ const ProductCard = ({ product, onClick }) => {
       {product.popular && <div className="best-seller">Best Seller</div>}
       <h3>{product.title}</h3>
       <p>{product.description}</p>
-      <div className="price"> ${product.price}</div>
+      {/* <div className="price"> ${product.price}</div> */}
     </Card>
   );
 };

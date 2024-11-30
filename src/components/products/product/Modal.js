@@ -120,7 +120,7 @@ const Modal = ({ product, onClose }) => {
         <ProductDetails>
           <h2>{product.title}</h2>
           <p>{product.description}</p>
-          <div className="price">₹{product.price}</div>
+          {/* <div className="price">₹{product.price}</div> */}
           {product.subcategory && <p>{product.subcategory}</p>}
           
           {/* Contact Us Button */}

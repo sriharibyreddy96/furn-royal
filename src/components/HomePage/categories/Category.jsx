@@ -10,8 +10,6 @@ const CategoryContainer = styled.div`
   align-items: center;
   margin: 60px 150px;
   justify-content: center;
-  // margin-left: 50px;
-  // margin-right: 50px;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -92,16 +90,17 @@ const CategoryItem = styled(Link)`
 
 const CategoryImage = styled.img`
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto; /* Fixed height for uniform image sizing */
+  object-fit: contain; /* Ensure the whole image is displayed without cropping */
   border-radius: 8px;
 `;
 
 const CategoryName = styled.p`
-  margin-top: 20px;
+  // margin-top: 15px; /* Adds space between image and text */
   font-weight: 800;
   font-size: 1.3rem;
   color: #333; /* Text color */
+  margin-top: 20px;
 `;
 
 const Category = () => {
