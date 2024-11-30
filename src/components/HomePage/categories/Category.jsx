@@ -72,7 +72,13 @@ const CategoryItem = styled(Link)`
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Light shadow for card */
   padding: 20px;
+  position: relative; /* For positioning the "Explore" button */
+  overflow: hidden; /* Hide anything overflowing the card */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+
+  /* Glassmorphism effect */
+  // background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px); /* Apply blur on hover */
 
   &:hover {
     transform: translateY(-10px); /* Lift the card when hovered */
@@ -91,16 +97,44 @@ const CategoryItem = styled(Link)`
 const CategoryImage = styled.img`
   width: 100%;
   height: auto; /* Fixed height for uniform image sizing */
-  object-fit: contain; /* Ensure the whole image is displayed without cropping */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 8px;
+  transition: filter 0.3s ease; /* Smooth transition for blur effect */
+  
+  ${CategoryItem}:hover & {
+    filter: blur(4px); /* Apply blur when the card is hovered */
+  }
 `;
 
 const CategoryName = styled.p`
-  // margin-top: 15px; /* Adds space between image and text */
   font-weight: 800;
   font-size: 1.3rem;
   color: #333; /* Text color */
   margin-top: 20px;
+  z-index: 1; /* Ensure text is above blurred background */
+`;
+
+const ExploreButton = styled.button`
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #03c03c;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  /* Center the button and add hover effect */
+  ${CategoryItem}:hover & {
+    opacity: 1; /* Show the button when the card is hovered */
+    transform: translateX(-50%) translateY(-10px); /* Hover animation for the button */
+  }
 `;
 
 const Category = () => {
@@ -115,15 +149,13 @@ const Category = () => {
       <CategoryHeading>Categories</CategoryHeading>
       <CategoryList>
         {["Bed", "Sofa", "Dining"].map((category) => (
-          <CategoryItem
-            to={`/category/${category.toLowerCase()}`}
-            key={category}
-          >
+          <CategoryItem to={`/category/${category.toLowerCase()}`} key={category}>
             <CategoryImage
               src={categoryImages[category.toLowerCase()]}
               alt={category}
             />
             <CategoryName>{category}</CategoryName>
+            <ExploreButton>Explore</ExploreButton>
           </CategoryItem>
         ))}
       </CategoryList>
