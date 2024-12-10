@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/furn-royal/static/css/main.9f411683.css",
-    "main.js": "/furn-royal/static/js/main.84c292db.js",
+    "main.js": "/furn-royal/static/js/main.a7b58b11.js",
     "static/media/12.jpg": "/furn-royal/static/media/12.dcee1ea361a7a88a42be.jpg",
     "static/media/4.jpg": "/furn-royal/static/media/4.2dd435ed52b71e04238e.jpg",
     "static/media/7.jpg": "/furn-royal/static/media/7.cbc68a1349e6dff82e88.jpg",
@@ -19,11 +19,11 @@
     "static/media/17.jpg": "/furn-royal/static/media/17.01cdc8ca062a6700f1f9.jpg",
     "static/media/bed1.jpg": "/furn-royal/static/media/bed1.01cdc8ca062a6700f1f9.jpg",
     "static/media/review-profile-1.jpeg": "/furn-royal/static/media/review-profile-1.f5b6781a317fdcf95dbb.jpeg",
+    "static/media/hero_bed2.png": "/furn-royal/static/media/hero_bed2.5bbbc9c04b2b489b54f5.png",
     "static/media/2_2.jpg": "/furn-royal/static/media/2_2.b13fc1b944398905f76d.jpg",
     "static/media/LOGO.jpg": "/furn-royal/static/media/LOGO.5bc5d2ad69be1646115e.jpg",
     "static/media/1_1.jpg": "/furn-royal/static/media/1_1.34ef3365147aa362161e.jpg",
     "static/media/3_3.jpg": "/furn-royal/static/media/3_3.e60c75b6fe480c277775.jpg",
-    "static/media/hero_bed.svg": "/furn-royal/static/media/hero_bed.bf31c3eee28cd8189569bff6307f32a3.svg",
     "static/media/Big_Table_8.jpg": "/furn-royal/static/media/Big_Table_8.ac41453bb3790415082b.jpg",
     "static/media/Small_Table_2.jpg": "/furn-royal/static/media/Small_Table_2.a6c9292a6fdc3dc71e0b.jpg",
     "static/media/Big_Table_5.jpg": "/furn-royal/static/media/Big_Table_5.838e9d3a9b4d30c5c8d7.jpg",
@@ -59,10 +59,10 @@
     "static/media/contact_form1.webp": "/furn-royal/static/media/contact_form1.6d7ac5158410d796b062.webp",
     "index.html": "/furn-royal/index.html",
     "main.9f411683.css.map": "/furn-royal/static/css/main.9f411683.css.map",
-    "main.84c292db.js.map": "/furn-royal/static/js/main.84c292db.js.map"
+    "main.a7b58b11.js.map": "/furn-royal/static/js/main.a7b58b11.js.map"
   },
   "entrypoints": [
     "static/css/main.9f411683.css",
-    "static/js/main.84c292db.js"
+    "static/js/main.a7b58b11.js"
   ]
 }
