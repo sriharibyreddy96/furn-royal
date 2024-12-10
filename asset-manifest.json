@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/furn-royal/static/css/main.9f411683.css",
-    "main.js": "/furn-royal/static/js/main.d97ddc7a.js",
+    "main.js": "/furn-royal/static/js/main.ae9349a7.js",
     "static/media/12.jpg": "/furn-royal/static/media/12.dcee1ea361a7a88a42be.jpg",
     "static/media/4.jpg": "/furn-royal/static/media/4.2dd435ed52b71e04238e.jpg",
     "static/media/7.jpg": "/furn-royal/static/media/7.cbc68a1349e6dff82e88.jpg",
@@ -14,14 +14,15 @@
     "static/media/11.jpg": "/furn-royal/static/media/11.8bdd462174fa66a9066c.jpg",
     "static/media/15.jpg": "/furn-royal/static/media/15.2d6793e9827654ceabee.jpg",
     "static/media/1.jpg": "/furn-royal/static/media/1.1a899a7ceefde64f3d8c.jpg",
-    "static/media/3.jpg": "/furn-royal/static/media/3.4180aa5023508d65b10f.jpg",
-    "static/media/2.jpg": "/furn-royal/static/media/2.4293a5361801f8ee03ce.jpg",
     "static/media/10.jpg": "/furn-royal/static/media/10.32c98cc0729075f286cb.jpg",
     "static/media/13.jpg": "/furn-royal/static/media/13.057330a8c73152addd8f.jpg",
     "static/media/17.jpg": "/furn-royal/static/media/17.01cdc8ca062a6700f1f9.jpg",
     "static/media/bed1.jpg": "/furn-royal/static/media/bed1.01cdc8ca062a6700f1f9.jpg",
     "static/media/review-profile-1.jpeg": "/furn-royal/static/media/review-profile-1.f5b6781a317fdcf95dbb.jpeg",
+    "static/media/2_2.jpg": "/furn-royal/static/media/2_2.b13fc1b944398905f76d.jpg",
     "static/media/LOGO.jpg": "/furn-royal/static/media/LOGO.5bc5d2ad69be1646115e.jpg",
+    "static/media/1_1.jpg": "/furn-royal/static/media/1_1.34ef3365147aa362161e.jpg",
+    "static/media/3_3.jpg": "/furn-royal/static/media/3_3.e60c75b6fe480c277775.jpg",
     "static/media/hero_bed.svg": "/furn-royal/static/media/hero_bed.bf31c3eee28cd8189569bff6307f32a3.svg",
     "static/media/Big_Table_8.jpg": "/furn-royal/static/media/Big_Table_8.ac41453bb3790415082b.jpg",
     "static/media/Small_Table_2.jpg": "/furn-royal/static/media/Small_Table_2.a6c9292a6fdc3dc71e0b.jpg",
@@ -55,12 +56,13 @@
     "static/media/Sofa_bed_1.jpg": "/furn-royal/static/media/Sofa_bed_1.f1ff0b141035bf6fba1d.jpg",
     "static/media/Five_Seating_Sofa_10.jpg": "/furn-royal/static/media/Five_Seating_Sofa_10.2fa17770af46d18df192.jpg",
     "static/media/Five_Seating_Sofa_12.jpg": "/furn-royal/static/media/Five_Seating_Sofa_12.ce9f322c7f037ce622ba.jpg",
+    "static/media/contact_form1.webp": "/furn-royal/static/media/contact_form1.6d7ac5158410d796b062.webp",
     "index.html": "/furn-royal/index.html",
     "main.9f411683.css.map": "/furn-royal/static/css/main.9f411683.css.map",
-    "main.d97ddc7a.js.map": "/furn-royal/static/js/main.d97ddc7a.js.map"
+    "main.ae9349a7.js.map": "/furn-royal/static/js/main.ae9349a7.js.map"
   },
   "entrypoints": [
     "static/css/main.9f411683.css",
-    "static/js/main.d97ddc7a.js"
+    "static/js/main.ae9349a7.js"
   ]
 }
