@@ -8,13 +8,12 @@ import BedImage from "../../../assets/category_imgs/bed1.jpg";
 const CategoryContainer = styled.div`
   display: flex;
   align-items: center;
-  margin: 60px 150px;
+  margin: 100px 150px;
   justify-content: center;
 
   @media (max-width: 1000px) {
     flex-direction: column;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 60px 30px;
   }
 
   @media (max-width: 550px) {

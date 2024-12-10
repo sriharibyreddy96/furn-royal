@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { RiSearchLine, RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import Hero_Img from "../../../assets/hero_bed.svg";
+import Hero_Img from "../../../assets/hero_bed2.png";
 import { Link } from "react-scroll"; // Import react-scroll Link
 import logo from "../../../assets/LOGO.jpg";
 
@@ -9,7 +9,7 @@ import logo from "../../../assets/LOGO.jpg";
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: #363636; /* Navy Blue */
+  background-color: #363636;
   color: white;
   margin-bottom: 50px;
 `;
@@ -20,7 +20,7 @@ const NavbarContainer = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  background-color: inherit; /* Inherit background from parent */
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,8 +60,9 @@ const LinksContainer = styled.div`
 
 // Link Styling
 const LinkStyled = styled(Link)`
-  color: white;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -78,7 +79,7 @@ const SearchContainer = styled.div`
   align-items: center;
   position: relative;
   max-width: 400px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
   width: 100%; /* Allow the search bar to expand and contract dynamically */
 
@@ -88,8 +89,8 @@ const SearchContainer = styled.div`
     border: none;
     width: 100%; /* Make the search bar responsive */
     outline: none;
-    background-color: #001f3d;
-    color: white;
+    // background-color: #001f3d;
+    color: black;
     font-size: 1rem;
   }
 
@@ -116,7 +117,7 @@ const MobileMenuIcon = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-    color: white;
+    color: black;
     font-size: 2rem;
   }
 `;
@@ -183,8 +184,8 @@ const HeroContainer = styled.section`
 // Text Section in Hero
 const TextSection = styled.div`
   flex: 1;
-  max-width: 500px;
-  margin: 30px 0px;
+  max-width: 700px;
+  margin: 50px 0px;
   position: relative;
 
   h1 {
@@ -312,7 +313,7 @@ function Hero() {
       {/* Hero Section */}
       <HeroContainer id="home">
         <TextSection>
-          <h1>Smart, Stylish Furniture for Every Space</h1>
+          <h1>Imported concept with Indian Strength</h1>
           <p>Transform your home with thoughtfully crafted furniture.</p>
           <button>Explore Products</button>
         </TextSection>

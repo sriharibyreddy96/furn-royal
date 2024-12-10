@@ -25,7 +25,7 @@ const NavbarContainer = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  background-color: inherit; /* Inherit background from parent */
+  background-color: white; /* Inherit background from parent */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,10 +59,11 @@ const LinksContainer = styled.div`
   gap: 2rem;
 
     a {
-    color: white;
+    color: black;
     padding: 0.5rem 0;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     transition: color 0.3s ease;
 
     &:hover {
@@ -93,7 +94,7 @@ const SearchContainer = styled.div`
   align-items: center;
   position: relative;
   max-width: 400px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
   width: 100%; /* Allow the search bar to expand and contract dynamically */
 
@@ -103,8 +104,8 @@ const SearchContainer = styled.div`
     border: none;
     width: 100%; /* Make the search bar responsive */
     outline: none;
-    background-color: #001f3d;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 1rem;
   }
 
@@ -131,7 +132,7 @@ const MobileMenuIcon = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-    color: white;
+    color: black;
     font-size: 2rem;
   }
 `;
