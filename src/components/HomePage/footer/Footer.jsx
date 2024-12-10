@@ -182,7 +182,7 @@ const Footer = () => {
             <FooterHeading>Information</FooterHeading>
             <InfoLinks>
               <a href="#">About Us</a>
-              <a href="/furn-royal/contact">Contact</a>
+              <a href="#">Contact</a>
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Service</a>
               <a href="#">FAQs</a>
