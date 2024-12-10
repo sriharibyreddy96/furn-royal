@@ -66,9 +66,9 @@ const CategoryItem = styled(Link)`
   color: black;
   text-align: center;
   cursor: pointer;
-  width: 26%;
+  width: 30%;
   margin-bottom: 30px;
-  background-color: #ecffdc;
+  // background-color: #ecffdc;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Light shadow for card */
   padding: 20px;

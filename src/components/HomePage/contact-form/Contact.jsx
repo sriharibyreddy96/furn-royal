@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
-import ContactIng from "../../../assets/contact_form.jpeg";
+import ContactIng from "../../../assets/contact_form1.webp";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

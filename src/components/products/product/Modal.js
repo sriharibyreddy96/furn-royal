@@ -121,7 +121,7 @@ const Modal = ({ product, onClose }) => {
           <h2>{product.title}</h2>
           <p>{product.description}</p>
           {/* <div className="price">₹{product.price}</div> */}
-          {product.subcategory && <p>{product.subcategory}</p>}
+          {/* {product.subcategory && <p>{product.subcategory}</p>} */}
           
           {/* Contact Us Button */}
           <button className="contact-btn" onClick={() => navigate('/contact')}>Contact Us</button>

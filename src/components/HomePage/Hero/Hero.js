@@ -78,6 +78,8 @@ const SearchContainer = styled.div`
   align-items: center;
   position: relative;
   max-width: 400px;
+  border: 1px solid white;
+  border-radius: 5px;
   width: 100%; /* Allow the search bar to expand and contract dynamically */
 
   input {

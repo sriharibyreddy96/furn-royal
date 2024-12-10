@@ -83,7 +83,7 @@ const AllProducts = () => {
       <SearchBar>
         <input
           type="text"
-          placeholder="Search by category (sofa, bed, dining, table)"
+          placeholder="Search by category (Ex: sofa, bed, dining)"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
