@@ -3,17 +3,10 @@ import ProductCard from "./ProductCard";
 import styled from "styled-components";
 import products from "../../../data/Products";
 import Modal from "./Modal";
-import offerlogo from "../../../assets/LOGO.jpg"; // General logo
-import bedimg1 from "../../../assets/Royal_Furn_Beds/1.jpg";
-// import bedimg2 from "../../../assets/Royal_Furn_Beds/2.jpg";
-// import bedimg3 from "../../../assets/Royal_Furn_Beds/3.jpg";
+import offerlogo from "../../../assets/LOGO.jpg";
+import bedimg1 from "../../../assets/Royal_Furn_Beds/classicseries001.jpg";
 import sofaimg1 from "../../../assets/Royal_Furn_Sofas/Five_Seating_Sofa_.jpg";
-// import sofaimg2 from "../../../assets/Royal_Furn_Sofas/Single_Sofa_2.jpg";
-// import sofaimg3 from "../../../assets/Royal_Furn_Sofas/Sofa_bed_1.jpg";
 import chairimg1 from "../../../assets/Royal_Furn_Tables/Big_Table_1.jpg";
-// import chairimg2 from "../../../assets/Royal_Furn_Tables/Big_Table_1.jpg";
-// import chairimg3 from "../../../assets/Royal_Furn_Tables/Small_Table_4.jpg";
-// import chairimg4 from "../../../assets/Royal_Furn_Tables/Small_Table_3.jpg";
 import { Link, useLocation } from "react-router-dom";
 
 // Styled Components for Offers Section
@@ -23,7 +16,7 @@ const OffersSection = styled.div`
   align-items: center;
   background-color: white;
   color: black;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-top: 30px;
   // border-radius: 8px;
@@ -125,6 +118,50 @@ const OffersSection = styled.div`
       .company-logo img {
         height: 200px;
         width: 280px;
+      }
+    }
+  }
+`;
+
+const DiscountCard = styled.div`
+  background-color: #ecffdc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 300px;
+  margin: 10px;
+
+  .discount {
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+
+    .phone-number {
+      font-size: 18px;
+      margin: 10px 0;
+      display: block;
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .more-info-link {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -250,7 +287,6 @@ const ProductList = ({ category }) => {
       product.category === category &&
       (selectedSubcategory === "All" ||
         product.subcategory === selectedSubcategory)
-        
   );
 
   // const handleSubcategoryChange = (subcategory) => {
@@ -305,7 +341,29 @@ const ProductList = ({ category }) => {
               </div>
             </div>
             <div className="offer-right">
-              <div className="discount">UPTO 30% OFF </div>
+              <DiscountCard>
+                <div className="discount">UPTO 15% OFF</div>
+                <div className="contact-info">
+                  <a href="tel:+91 9949459796" className="phone-number">
+                    Call Now: +91 9949459796
+                  </a>
+                  <a href="tel:+91 9949817760" className="phone-number">
+                    Or Call: +91 9949817760
+                  </a>
+                  {/* <Link to="https://maps.app.goo.gl/Fqm4dJNKadgvH13a7?g_st=iw" className="more-info-link">
+                    Visit our Store
+                  </Link> */}
+                  <a
+                    href="https://maps.app.goo.gl/Fqm4dJNKadgvH13a7?g_st=iw"
+                    className="more-info-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Click to Visit our Store
+                  </a>
+                </div>
+              </DiscountCard>
+              {/* <div className="discount">UPTO 15% OFF</div> */}
               <div className="company-logo">
                 <img src={getCategoryImage()} alt="Category Offer" />
               </div>

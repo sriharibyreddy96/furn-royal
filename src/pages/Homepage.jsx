@@ -6,6 +6,8 @@ import Category from '../components/HomePage/categories/Category';
 import Footer from '../components/HomePage/footer/Footer';
 import PopularProducts from '../components/HomePage/popular-products/PopularProducts';
 import Toast from '../data/Toast';
+import PhoneIconComponent from '../components/utils/PhoneIconComponent';
+import GoogleNav from '../components/HomePage/GoogleNav/GoogleNav';
 
 const Homepage = () => {
   return (
@@ -30,6 +32,9 @@ const Homepage = () => {
       </div>
 
       <Toast />
+      <PhoneIconComponent />
+
+      <GoogleNav />
 
       {/* Footer */}
       <Footer />

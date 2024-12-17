@@ -5,6 +5,7 @@ import ProductCard from "../components/products/product/ProductCard";
 import Navbar from "../components/HomePage/navbar/Navbar";
 import Footer from "../components/HomePage/footer/Footer";
 import Modal from "../components/products/product/Modal";
+import PhoneIconComponent from "../components/utils/PhoneIconComponent";
 
 // Styled component for grid layout
 const ProductGrid = styled.div`
@@ -102,7 +103,7 @@ const AllProducts = () => {
           <Modal product={selectedProduct} onClose={handleModalClose} />
         )}
       </ProductGrid>
-
+      <PhoneIconComponent />
       <Footer />
     </>
   );

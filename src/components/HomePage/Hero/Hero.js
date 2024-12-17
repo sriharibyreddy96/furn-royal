@@ -314,7 +314,7 @@ function Hero() {
       <HeroContainer id="home">
         <TextSection>
           <h1>Imported concept with Indian Strength</h1>
-          <p>Transform your home with thoughtfully crafted furniture.</p>
+          <p>Quality for your satisfaction</p>
           <button>Explore Products</button>
         </TextSection>
         <ImageSection>

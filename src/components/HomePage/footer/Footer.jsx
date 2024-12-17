@@ -157,7 +157,7 @@ const Footer = () => {
           {/* <FooterSubHeading>RoyalFurn</FooterSubHeading> */}
           <img src={logo} alt=""/>
           <FooterText>
-            Quality furniture for every home. Affordable and stylish.
+          Quality for your satisfaction
           </FooterText>
           <SocialIcons>
             <a href="#" target="_blank" rel="noopener noreferrer">
@@ -181,11 +181,8 @@ const Footer = () => {
           <div>
             <FooterHeading>Information</FooterHeading>
             <InfoLinks>
-              <a href="#">About Us</a>
-              <a href="#">Contact</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">FAQs</a>
+              <a href="/contact">Contact</a>
+              <a href="/terms">Terms and Conditions</a>
             </InfoLinks>
           </div>
 

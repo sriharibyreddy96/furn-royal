@@ -4,6 +4,8 @@ import Contact from '../components/HomePage/contact-form/Contact'
 import Footer from '../components/HomePage/footer/Footer'
 import { useLocation } from 'react-router-dom'
 import Toast from '../data/Toast'
+import PhoneIconComponent from '../components/utils/PhoneIconComponent'
+import GoogleNav from '../components/HomePage/GoogleNav/GoogleNav'
 
 const Contactpage = () => {
 
@@ -18,6 +20,8 @@ const Contactpage = () => {
         <Navbar />
         <Contact />
         <Toast />
+        <GoogleNav />
+        <PhoneIconComponent />
         <Footer />
     </div>
   )

@@ -1,28 +1,34 @@
-import bedImage1_1 from '../assets/Royal_Furn_Beds/1_1.jpg';
-import bedImage1_2 from '../assets/Royal_Furn_Beds/2_2.jpg';
-import bedImage1_3 from '../assets/Royal_Furn_Beds/3_3.jpg';
+import bedImage1_1 from '../assets/Royal_Furn_Beds/leather001.jpg';
+import bedImage1_2 from '../assets/Royal_Furn_Beds/leather002.jpg';
+import bedImage1_3 from '../assets/Royal_Furn_Beds/leather003.jpg';
 
-import bedImage4 from '../assets/Royal_Furn_Beds/4.jpg';
-import bedImage5 from '../assets/Royal_Furn_Beds/5.jpg';
-import bedImage6 from '../assets/Royal_Furn_Beds/6.jpg';
-import bedImage7 from '../assets/Royal_Furn_Beds/7.jpg';
-import bedImage8 from '../assets/Royal_Furn_Beds/8.jpg';
-import bedImage9 from '../assets/Royal_Furn_Beds/9.jpg';
-import bedImage10 from '../assets/Royal_Furn_Beds/10.jpg';
-import bedImage11 from '../assets/Royal_Furn_Beds/11.jpg';
-import bedImage12 from '../assets/Royal_Furn_Beds/12.jpg';
-import bedImage13 from '../assets/Royal_Furn_Beds/13.jpg';
-import bedImage14 from '../assets/Royal_Furn_Beds/14.jpg';
-import bedImage15 from '../assets/Royal_Furn_Beds/15.jpg';
-import bedImage16 from '../assets/Royal_Furn_Beds/16.jpg';
-import bedImage17 from '../assets/Royal_Furn_Beds/17.jpg';
+import bedImage4 from '../assets/Royal_Furn_Beds/classicseries001.jpg';
+import bedImage5 from '../assets/Royal_Furn_Beds/classicseries002.jpg';
+import bedImage6 from '../assets/Royal_Furn_Beds/classicseries003.jpg';
+import bedImage7 from '../assets/Royal_Furn_Beds/classicseries004.jpg';
+import bedImage8 from '../assets/Royal_Furn_Beds/classicseries006.jpg';
+import bedImage9 from '../assets/Royal_Furn_Beds/classicseries008.jpg';
+import bedImage10 from '../assets/Royal_Furn_Beds/classicseries009.jpg';
+import bedImage11 from '../assets/Royal_Furn_Beds/devineseries001.jpg';
+import bedImage12 from '../assets/Royal_Furn_Beds/devineseries005.jpg';
+import bedImage13 from '../assets/Royal_Furn_Beds/devineseries006.jpg';
+import bedImage14 from '../assets/Royal_Furn_Beds/model701.jpg';
+import bedImage15 from '../assets/Royal_Furn_Beds/model702.jpg';
+import bedImage16 from '../assets/Royal_Furn_Beds/model703.jpg';
+import bedImage17 from '../assets/Royal_Furn_Beds/model705.jpg';
+import bedImage18 from '../assets/Royal_Furn_Beds/model706.jpg';
+import bedImage19 from '../assets/Royal_Furn_Beds/model901.jpg';
+import bedImage20 from '../assets/Royal_Furn_Beds/model903.jpg';
+import bedImage21 from '../assets/Royal_Furn_Beds/model905.jpg';
+import bedImage22 from '../assets/Royal_Furn_Beds/model906.jpg';
+import bedImage23 from '../assets/Royal_Furn_Beds/model907.jpg';
 
-import sofaImage1 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_.jpg';
-import sofaImage2 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_1.jpg';
-import sofaImage3 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_2.jpg';
-import sofaImage4 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_3.jpg';
-import sofaImage5 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_4.jpg';
-import sofaImage6 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_5.jpg';
+import sofaImage1 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_1.jpg';
+import sofaImage2 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_2.jpg';
+import sofaImage3 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_3.jpg';
+import sofaImage4 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_4.jpg';
+import sofaImage5 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_5.jpg';
+import sofaImage6 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_.jpg';
 import sofaImage7 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_6.jpg';
 import sofaImage8 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_7.jpg';
 import sofaImage9 from '../assets/Royal_Furn_Sofas/Five_Seating_Sofa_8.jpg';
@@ -46,34 +52,34 @@ import chairImage4 from '../assets/Royal_Furn_Tables/Big_Table_4.jpg';
 import chairImage6 from '../assets/Royal_Furn_Tables/Big_Table_5.jpg';
 import chairImage7 from '../assets/Royal_Furn_Tables/Big_Table_6.jpg';
 import chairImage8 from '../assets/Royal_Furn_Tables/Big_Table_7.jpg';
-import chairImage9 from '../assets/Royal_Furn_Tables/Big_Table_8.jpg';
-
-import chairImage10 from '../assets/Royal_Furn_Tables/Small_Table_1.jpg';
-import chairImage11 from '../assets/Royal_Furn_Tables/Small_Table_2.jpg';
+import chairImage9 from '../assets/Royal_Furn_Tables/Small_Table_1.jpg';
+import chairImage10 from '../assets/Royal_Furn_Tables/Big_Table_8.jpg';
+import chairImage11 from '../assets/Royal_Furn_Tables/Small_Table_1.jpg';
 import chairImage12 from '../assets/Royal_Furn_Tables/Small_Table_3.jpg';
 import chairImage13 from '../assets/Royal_Furn_Tables/Small_Table_4.jpg';
-import chairImage14 from '../assets/Royal_Furn_Tables/Small_Table_1.jpg';
+import chairImage14 from '../assets/Royal_Furn_Tables/Small_Table_2.jpg';
+
 
 const products = [
   {
     id: 1,
-    title: "Royal Sofa 001",
+    title: "Royal Recliner Sofa 001",
     image: sofaImage1,
     price: 500,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 35 inches, Width: 60 inches, Depth: 30 inches",
     popular: false,
   },
   {
     id: 2,
-    title: "Royal Recliner Sofa 001",
+    title: "Royal Recliner Sofa 002",
     image: sofaImage2,
     price: 800,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 36 inches, Width: 84 inches, Depth: 32 inches",
     popular: false,
   },
@@ -101,34 +107,34 @@ const products = [
   },
   {
     id: 5,
-    title: "Leather Cot 002",
+    title: "Leather Cot 001",
     image: bedImage1_1,
     price: 600,
     category: "bed",
     subcategory: "leather",
-    description: "Silicon Coated leather (head board) Remaining body HMR grade compressed engineered wood",
+    description: "Silicon Coated leather (head board) Remaining body HMR grade compressed engineered wood With Italian pigmented PU coatings.",
     size: "Length: 75 inches, Width: 60 inches, Height: 35 inches",
     popular: true,
   },
   {
     id: 6,
-    title: "Leather Cot 001",
+    title: "Leather Cot 002",
     image: bedImage1_2,
     price: 1000,
     category: "bed",
     subcategory: "doublecot",
-    description: "Silicon Coated leather (head board) Remaining body HMR grade compressed engineered wood",
+    description: "Silicon Coated leather (head board) Remaining body HMR grade compressed engineered wood With Italian pigmented PU coatings.",
     size: "Length: 80 inches, Width: 60 inches, Height: 40 inches",
     popular: true,
   },
   {
     id: 7,
-    title: "Royal Recliner Sofa 002",
+    title: "Royal Recliner Sofa 003",
     image: sofaImage3,
     price: 1200,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 35 inches, Width: 96 inches, Depth: 40 inches",
     popular: true,
   },
@@ -145,12 +151,12 @@ const products = [
   },
   {
     id: 9,
-    title: "Royal Recliner Sofa 003",
+    title: "Royal Recliner Sofa 004",
     image: sofaImage4,
     price: 950,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 38 inches, Width: 85 inches, Depth: 35 inches",
     popular: true,
   },
@@ -172,29 +178,29 @@ const products = [
     price: 1500,
     category: "bed",
     subcategory: "doublecot",
-    description: "Silicon Coated leather (head board) Remaining body HMR grade compressed engineered wood",
+    description: "Silicon Coated leather (head board) Remaining body HMR grade compressed engineered wood  With Italian pigmented PU coatings.",
     size: "Length: 84 inches, Width: 76 inches, Height: 45 inches",
     popular: true,
   },
   {
     id: 12,
-    title: "Modular Italian PU cots 905",
+    title: "Classic Series 001",
     image: bedImage4,
     price: 350,
     category: "bed",
     subcategory: "singlecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 75 inches, Width: 38 inches, Height: 35 inches",
     popular: true,
   },
   {
     id: 13,
-    title: "Royal Recliner Sofa 004",
+    title: "Royal Recliner Sofa 005",
     image: sofaImage5,
     price: 850,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 34 inches, Width: 75 inches, Depth: 32 inches",
     popular: false,
   },
@@ -211,34 +217,34 @@ const products = [
   },
   {
     id: 15,
-    title: "Modular Italian PU cots 906",
+    title: "Classic Series 002",
     image: bedImage5,
     price: 700,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 78 inches, Width: 60 inches, Height: 38 inches",
     popular: false,
   },
   {
     id: 16,
-    title: "Modular Italian PU cots 907",
+    title: "Classic Series 003",
     image: bedImage6,
     price: 450,
     category: "bed",
     subcategory: "singlecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 75 inches, Width: 40 inches, Height: 35 inches",
     popular: false,
   },
   {
     id: 17,
-    title: "Royal Recliner Sofa 005",
+    title: "Royal Sofa 001",
     image: sofaImage6,
     price: 1200,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 36 inches, Width: 84 inches, Depth: 38 inches",
     popular: false,
   },
@@ -260,7 +266,7 @@ const products = [
     price: 800,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 40 inches, Width: 58 inches, Depth: 36 inches",
     popular: false,
   },
@@ -277,23 +283,23 @@ const products = [
   },
   {
     id: 21,
-    title: "Modular Italian PU cots 702",
+    title: "Classic Series 004",
     image: bedImage7,
     price: 650,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 75 inches, Width: 60 inches, Height: 12 inches",
     popular: false,
   },
   {
     id: 22,
-    title: "Modular Italian PU cots 703",
+    title: "Classic Series 006",
     image: bedImage8,
     price: 850,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 80 inches, Width: 60 inches, Height: 40 inches",
     popular: false,
   },
@@ -304,7 +310,7 @@ const products = [
     price: 500,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 34 inches, Width: 55 inches, Depth: 30 inches",
     popular: false,
   },
@@ -315,7 +321,7 @@ const products = [
     price: 700,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 40 inches, Width: 60 inches, Depth: 36 inches",
     popular: false,
   },
@@ -332,7 +338,7 @@ const products = [
   },
   {
     id: 26,
-    title: "Royal Dining ECO 004",
+    title: "Royal Dining ECO 003",
     image: chairImage9,
     price: 140,
     category: "dining",
@@ -343,23 +349,23 @@ const products = [
   },
   {
     id: 27,
-    title: "Modular Italian PU cots 705",
+    title: "Classic Series 008",
     image: bedImage9,
     price: 1600,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 84 inches, Width: 76 inches, Height: 45 inches",
     popular: false,
   },
   {
     id: 28,
-    title: "Modular Italian PU cots 706",
+    title: "Classic Series 009",
     image: bedImage10,
     price: 450,
     category: "bed",
     subcategory: "singlecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings",
     size: "Length: 75 inches, Width: 38 inches, Height: 14 inches",
     popular: false,
   },
@@ -370,13 +376,13 @@ const products = [
     price: 600,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 35 inches, Width: 60 inches, Depth: 32 inches",
     popular: false,
   },
   {
     id: 30,
-    title: "Royal Dining ECO 003",
+    title: "Royal Dining ECO 004",
     image: chairImage10,
     price: 230,
     category: "dining",
@@ -387,18 +393,18 @@ const products = [
   },
   {
     id: 31,
-    title: "Modular Italian PU cots 701",
+    title: "Divine Series 001",
     image: bedImage11,
     price: 700,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 80 inches, Width: 60 inches, Height: 12 inches",
     popular: false,
   },
   {
     id: 32,
-    title: "Royal Dining 008",
+    title: "Royal Dining 005",
     image: chairImage11,
     price: 170,
     category: "dining",
@@ -409,23 +415,23 @@ const products = [
   },
   {
     id: 33,
-    title: "Classic Series 009",
+    title: "Divine Series 005",
     image: bedImage12,
     price: 800,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 80 inches, Width: 60 inches, Height: 45 inches",
     popular: true,
   },
   {
     id: 34,
-    title: "Classic Series 001",
+    title: "Divine Series 006",
     image: bedImage13,
     price: 650,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 75 inches, Width: 60 inches, Height: 36 inches",
     popular: false,
   },
@@ -442,23 +448,23 @@ const products = [
   },
   {
     id: 36,
-    title: "Classic Series 003",
+    title: "Modular Italian PU cots Model 701",
     image: bedImage14,
     price: 500,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 75 inches, Width: 38 inches (per bed), Height: 60 inches",
     popular: false,
   },
   {
     id: 37,
-    title: "Classic Series 006",
-    image: bedImage16,
+    title: "Modular Italian PU cots Model 702",
+    image: bedImage15,
     price: 1300,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
     popular: true,
   },
@@ -469,13 +475,13 @@ const products = [
     price: 1400,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 36 inches, Width: 100 inches, Depth: 40 inches",
     popular: false,
   },
   {
     id: 39,
-    title: "Royal Dining 006",
+    title: "Royal Dining 007",
     image: chairImage13,
     price: 180,
     category: "dining",
@@ -486,7 +492,7 @@ const products = [
   },
   {
     id: 40,
-    title: "Royal Dining 007",
+    title: "Royal Dining 008",
     image: chairImage14,
     price: 220,
     category: "dining",
@@ -513,7 +519,7 @@ const products = [
     price: 1500,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 36 inches, Width: 100 inches (long side), Depth: 40 inches",
     popular: false,
   },
@@ -530,12 +536,12 @@ const products = [
   // },
   {
     id: 44,
-    title: "Classic Series 002",
-    image: bedImage15,
+    title: "Modular Italian PU cots Model 703",
+    image: bedImage16,
     price: 850,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 80 inches, Width: 38 inches (per bed), Height: 70 inches",
     popular: true,
   },
@@ -546,21 +552,21 @@ const products = [
     price: 950,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 36 inches, Width: 84 inches, Depth: 36 inches",
     popular: false,
   },
-  // {
-  //   id: 46,
-  //   title: "Classic Series",
-  //   image: bedImage16,
-  //   price: 600,
-  //   category: "bed",
-  //   subcategory: "singlecot",
-  //   description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
-  //   size: "Length: 75 inches, Width: 39 inches, Height: 14 inches",
-  //   popular: false,
-  // },
+  {
+    id: 46,
+    title: "Modular Italian PU cots Model 705",
+    image: bedImage17,
+    price: 600,
+    category: "bed",
+    subcategory: "singlecot",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    size: "Length: 75 inches, Width: 39 inches, Height: 14 inches",
+    popular: false,
+  },
   {
     id: 47,
     title: "Royal Corner 001",
@@ -568,7 +574,7 @@ const products = [
     price: 1200,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 34 inches, Width: 80 inches, Depth: 35 inches",
     popular: true,
   },
@@ -585,12 +591,12 @@ const products = [
   // },
   {
     id: 49,
-    title: "Classic Series 008",
-    image: bedImage17,
+    title: "Modular Italian PU cots Model 706",
+    image: bedImage18,
     price: 2000,
     category: "bed",
     subcategory: "doublecot",
-    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
     size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
     popular: true,
   },
@@ -601,7 +607,7 @@ const products = [
     price: 750,
     category: "sofa",
     subcategory: "5seating",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 32 inches, Width: 56 inches, Depth: 35 inches",
     popular: false,
   },
@@ -612,18 +618,18 @@ const products = [
     price: 700,
     category: "sofa",
     subcategory: "Sofabed",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 32 inches, Width: 56 inches, Depth: 35 inches",
     popular: false,
   },
   {
     id: 52,
-    title: "Royal Corner 003",
+    title: "Royal Lounger 003",
     image: sofaImage20,
     price: 750,
     category: "sofa",
     subcategory: "Sofabed",
-    description: "Leather type luxury indonesia pine wood with high denisty form covered with macro fabric 500 GSM.",
+    description: "Leather type luxury indonesia pine wood with high denisty form.",
     size: "Height: 32 inches, Width: 56 inches, Depth: 35 inches",
     popular: false,
   },
@@ -658,6 +664,61 @@ const products = [
     subcategory: "1seating",
     description: "Indonesia pine wood with high density form covered with micro fabric 500 GSM.",
     size: "Height: 36 inches, Width: 100 inches, Depth: 40 inches",
+    popular: true,
+  },
+  {
+    id: 56,
+    title: "Modular Italian PU cots Model 901",
+    image: bedImage19,
+    price: 2000,
+    category: "bed",
+    subcategory: "doublecot",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
+    size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
+    popular: true,
+  },
+  {
+    id: 57,
+    title: "Modular Italian PU cots Model 903",
+    image: bedImage20,
+    price: 2000,
+    category: "bed",
+    subcategory: "doublecot",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
+    size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
+    popular: true,
+  },
+  {
+    id: 58,
+    title: "Modular Italian PU cots Model 905",
+    image: bedImage21,
+    price: 2000,
+    category: "bed",
+    subcategory: "doublecot",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
+    popular: true,
+  },
+  {
+    id: 59,
+    title: "Modular Italian PU cots Model 906",
+    image: bedImage22,
+    price: 2000,
+    category: "bed",
+    subcategory: "doublecot",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings.",
+    size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
+    popular: true,
+  },
+  {
+    id: 60,
+    title: "Modular Italian PU cots Model 907",
+    image: bedImage23,
+    price: 2000,
+    category: "bed",
+    subcategory: "doublecot",
+    description: "HMR grade compressed engineered wood with Italian pigmented PU Coatings ",
+    size: "Length: 84 inches, Width: 76 inches, Height: 50 inches",
     popular: true,
   },
 ];

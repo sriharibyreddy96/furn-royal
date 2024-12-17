@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 import Contactpage from "./pages/Contactpage";
 import AllProducts from "./pages/AllProducts";
+import TermsConditions from "./pages/TermsConditions";
 
 const App = () => {
   useEffect(() => {
@@ -12,7 +13,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter  basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/category/:category" element={<ProductPage />} />
@@ -20,6 +21,7 @@ const App = () => {
         {/* <Route path="/products" element={<ProductPage />} /> */}
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/products" element={<AllProducts />} />
+        <Route path="/terms" element={<TermsConditions />} />
 
       </Routes>
     </BrowserRouter>
