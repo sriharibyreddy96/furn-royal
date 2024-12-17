@@ -34,7 +34,7 @@ const IconContainer = styled.div`
 const Icon = styled.i`
   font-size: 25px;
   color: #fff;
-  background-color: #d32525;
+  background-color: green;
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
@@ -52,7 +52,7 @@ const Icon = styled.i`
 const PhoneText = styled.span`
   color: #fff;
   font-size: 15px;
-  background-color: #d32525;
+  background-color: green;
   padding: 3px 5px;
   border-radius: 5px 0px 0px 5px;
   display: ${({ visible }) => (visible ? "inline-block" : "none")};
@@ -67,8 +67,10 @@ const PhoneLink = styled.a`
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #b01717; /* Darker red when hovered */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+  border: 1px solid white;
+  border-radius: 3px;
+    background-color: #008200; /* Darker red when hovered */
+    transform: scale(1.04); /* Slightly enlarge on hover */
   }
 `;
 

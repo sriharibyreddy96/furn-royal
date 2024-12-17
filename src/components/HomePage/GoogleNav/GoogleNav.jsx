@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import locationImg from '../../../assets/location.png';
+import locationImg from '../../../assets/location1.png';
 
 // Styled-components for the entire container
 const Container = styled.div`
